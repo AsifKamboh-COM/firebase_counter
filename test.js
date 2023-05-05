@@ -22,7 +22,6 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
 const hitCounter = document.getElementById("hit-counter");
-hitCounter.style.display = "none";
 
 const db = firebase.database().ref("totalHits");
 db.on("value", (snapshot) => {
